@@ -1,0 +1,2 @@
+httpprocessor  代理模式写的网络请求隔离框架
+httprequest  工厂设计模式写的网路框架
