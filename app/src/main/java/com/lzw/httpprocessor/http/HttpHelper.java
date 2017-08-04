@@ -9,7 +9,6 @@ import java.util.Map;
 /**
  * 代理类
  */
-
 public class HttpHelper implements IhttpProcessor {
 
     private static IhttpProcessor mIhttpProcessor;
@@ -38,18 +37,18 @@ public class HttpHelper implements IhttpProcessor {
 
     @Override
     public void get(String url, Map<String, Object> params, ICallBack callback) {
-        final String finalUrl = appendParams(url,params);
-		mIhttpProcessor.get(finalUrl,params,callback);
+        //final String finalUrl = appendParams(url,params);
+		mIhttpProcessor.get(url,params,callback);
     }
 
     @Override
     public void post(String url, Map<String, Object> params, ICallBack callback) {
-        final String finalUrl = appendParams(url,params);
-		mIhttpProcessor.post(finalUrl,params,callback);
+        //final String finalUrl = appendParams(url,params);
+		mIhttpProcessor.post(url,params,callback);
     }
 
 	//拼接url
 	private String appendParams(String url, Map<String, Object> params){
-
+        return "";
 	}
 }

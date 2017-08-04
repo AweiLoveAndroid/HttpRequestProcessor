@@ -17,10 +17,34 @@ public class ExpressBean {
     public String state;//3
     public ArrayList<DataBean> data;
 
+    @Override
+    public String toString() {
+        return "ExpressBean{" +
+                "message='" + message + '\'' +
+                ", nu='" + nu + '\'' +
+                ", ischeck='" + ischeck + '\'' +
+                ", condition='" + condition + '\'' +
+                ", com='" + com + '\'' +
+                ", status='" + status + '\'' +
+                ", state='" + state + '\'' +
+                ", data=" + data +
+                '}';
+    }
+
     public static class DataBean {
         public String time;//2013-05-27 13:48:37
         public String ftime;//2013-05-27 13:48:37
         public String context;//派件已【签收】,签收人是【秦胜杰】签收网点是【北京人大分部】
         public String location;//
+
+        @Override
+        public String toString() {
+            return "DataBean{" +
+                    "time='" + time + '\'' +
+                    ", ftime='" + ftime + '\'' +
+                    ", context='" + context + '\'' +
+                    ", location='" + location + '\'' +
+                    '}';
+        }
     }
 }

@@ -5,12 +5,6 @@ import android.app.Application;
 import com.lzw.httpprocessor.http.HttpHelper;
 import com.lzw.httpprocessor.processor.VolleyProcessor;
 
-/**
- * 作者：Created by lzw
- * 时间：Created on 2017/6/11 0011 10:22
- * 邮箱：lzw20099002@126.com
- */
-
 public class MyApplication extends Application {
 
     @Override

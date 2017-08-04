@@ -2,6 +2,7 @@ package com.lzw.httpprocessor.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 null, new HttpCallback<ExpressBean>() {
                     @Override
                     public void onSuccess(ExpressBean expressBean) {
+                        Log.i("onSuccess: ",expressBean.data.toString());
                         StringBuffer sb = new StringBuffer();
                         if(expressBean != null){
                             ArrayList<ExpressBean.DataBean> datas = expressBean.data;
